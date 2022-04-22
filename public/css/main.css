@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Oswald';
+    src: url('/static/fonts/Oswald.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/static/fonts/Lato.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-primary {
+    font-family: 'Lato', Arial, sans-serif;
+}
+
+.font-secondary {
+    font-family: 'Oswald', Helvetica, sans-serif;
+}
+
+header {
+    padding: 1.6rem 0;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
+.mb-8 {
+    margin-bottom: 8rem;
+}
+
+.mb-20 {
+    margin-bottom: 20rem;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: red;
+    }
+}
