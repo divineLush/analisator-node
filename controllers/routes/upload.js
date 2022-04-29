@@ -5,4 +5,6 @@ exports.getUpload = (req, res) => {
 }
 
 exports.postUpload = (req, res) => {
+    console.log('123123113213')
+    res.redirect('/')
 }
