@@ -155,3 +155,19 @@ form {
     display: flex;
     flex-direction: column
 }
+
+@media (max-width: 768px) {
+    form {
+        min-width: auto;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
