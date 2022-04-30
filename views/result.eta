@@ -1,38 +1,19 @@
-<% layout('base.eta') %>
-
-<header>
-    <h1 class="font-secondary color-black header-title text-center">АНАЛИЗАТОР</h1>
-    <h2 class="text-center">Крем для рук</h3>
-    <h3 class="text-center font-secondary">БЕЗВРЕДНЫЙ</h3>
-</header>
-<main>
-    <div class="results">
-        <div class="result-block bg-red">
-            <h4 class="text-center">ВРЕДНЫЕ ВЕЩЕСТВА</h4>
-            <ul class="text-center">
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-            </ul>
-        </div>
-        <div class="result-block bg-green">
-            <h4 class="text-center">ПОЛЕЗНЫЕ ВЕЩЕСТВА</h4>
-            <ul class="text-center">
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-            </ul>
-        </div>
-        <div class="result-block bg-grey">
-            <h4 class="text-center">ДРУГОЕ</h4>
-            <ul class="text-center">
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-                <li>test</li>
-            </ul>
-        </div>
-    </div>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title><%= it.title %></title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body class="font-primary" style="background: <%= it.bgColor %>">
+        <header class="mb-8 color-black">
+            <h1 class="font-secondary color-black header-title text-center">АНАЛИЗАТОР</h1>
+            <a href="/">на главную</a>
+        </header>
+        <main>
+            <h2 class="text-center text-result" ><%= it.resStr %></h2>
+        </main>
+    </body>
+</html>

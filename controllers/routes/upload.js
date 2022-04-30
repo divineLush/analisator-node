@@ -1,10 +1,8 @@
-const { v4: uuidv4 } = require('uuid')
+const scraper = require('../scraper')
 
-exports.getUpload = (req, res) => {
-    res.render('upload',  { title: 'upload' })
-}
-
-exports.postUpload = (req, res) => {
-    console.log('123123113213')
-    res.redirect('/')
+exports.postUpload = async (req, res) => {
+    const scrapRes = parseInt(await scraper())
+    const bgColor = scrapRes <= 2 ? '#5F875F' : '#AF5F5F'
+    const resStr = scrapRes <= 2 ? 'безвредный' : 'вредный'
+    res.render('result',  { title: 'upload', resStr, bgColor })
 }

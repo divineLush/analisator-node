@@ -29,11 +29,13 @@ body {
     background: #1c1c1c;
     color: #fff;
     font-size: 2.2rem;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 button {
     cursor: pointer;
     border-radius: 8px;
+    font-size: 2rem;
 }
 
 .flex {
@@ -64,8 +66,13 @@ button {
     font-family: 'Oswald', Helvetica, sans-serif;
 }
 
+a,
+a:visited {
+    color: #1C1C1C;
+}
+
 header {
-    padding: 1.6rem 0;
+    padding: 1.6rem 3rem;
 }
 
 h1 {
@@ -92,11 +99,12 @@ input,
 textarea {
     color: #8B98B6;
     border-radius: 8px;
+    font-size: 2rem;
 }
 
 input[type=file] {
     border: 0;
-    padding: 0;
+    padding: 1rem;
     color: #5F87AF;
 }
 
@@ -133,9 +141,17 @@ input[type=file]::file-selector-button {
     transform: scale(1.1);
 }
 
-.upload-btn:active {
-    color: #e8e9ec;
-    background: #cc517a;
-    box-shadow: 5px 5px #668e3d;
-    transform: scale(.9);
+.text-result {
+    font-family: 'Oswald', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+.color-black {
+    color: #1C1C1C;
+}
+
+form {
+    min-width: 500px;
+    display: flex;
+    flex-direction: column
 }
